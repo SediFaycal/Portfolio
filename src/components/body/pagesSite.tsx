@@ -10,13 +10,12 @@ import {
   Icon,
   IconProps,
   Link,
+  Center,
 } from '@chakra-ui/react'
 import React from 'react';
 
 import { BsGithub } from "react-icons/bs"
 import { useTranslation } from 'react-i18next';
-
-import i18n from 'i18n';
 
 
 interface SkillCategoryProps {
@@ -41,26 +40,27 @@ function SkillCategory({ title, skills }: SkillCategoryProps) {
 export default function CallToActionWithIllustration() {
   const { t } = useTranslation();
   const technicalSkills = [
-    "Langages de programmation : Html, CSS, Php, JavaScript, Python, Java, NodeJS, Typescript, Git",
-    "Frameworks : React, Symfony, Spring Boot",
-    "Bases de données : MySQL, MongoDB",
+    "Operating Systems: Windows XP / 7 / 10 / 11, Linux/Ubuntu, Kali",
+    "Programming Languages: HTML, CSS, PHP, JavaScript, Python, Java, NodeJS, TypeScript, Git",
+    "Frameworks: React, Symfony",
+    "Databases: MySQL, MongoDB",
   ];
 
   const designSkills = [
-    "Conception d'interfaces utilisateur",
-    "Design d'expérience utilisateur (UX)",
-    "Outils de design : Figma, Suite Adobe",
+    "User Interface Design",
+    "User Experience Design (UX)",
+    "Design Tools: Figma, Adobe Suite",
   ];
 
   const projectManagementSkills = [
-    "Gestion de projet Agile",
-    "Collaboration interfonctionnelle",
-    "Planification et suivi de projets",
+    "Agile Project Management",
+    "Interfunctional Collaboration",
+    "Project Planning and Tracking",
   ];
 
   const languages = [
-    "Anglais (Courant)",
-    "Français (Langue maternelle)",
+    "English (Fluent)",
+    "French (Native Language)",
   ];
   
   return (
@@ -70,26 +70,18 @@ export default function CallToActionWithIllustration() {
         align={'center'}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}>
-        <Link href="https://github.com/SediFaycal" color="blue.500" _hover={{ color: "red.500" }}>
-          <Heading
-            fontWeight={600}
-            fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
-            lineHeight={'110%'}>
-            Mon GitHub
-          </Heading>
-        </Link>
         <Text style={{ textAlign: 'left' }}>
-            <p><strong>Je suis SELLAH Fayçal,</strong> un développeur Full Stack en constante quête d'amélioration et d'innovation. Mon portfolio est une fenêtre sur mon voyage au sein de l'univers du développement, et de l'art à travers le monde de la photo ou bien de la vidéo, un voyage marqué par la croissance, l'apprentissage et la recherche de l'excellence.</p>
+          <p><strong>I am SELLAH Fayçal,</strong> a Full Stack developer constantly seeking improvement and innovation. My portfolio is a window into my journey in the world of development and art through the realms of photography or video, a journey marked by growth, learning, and the pursuit of excellence.</p>
+
+            <SkillCategory title="Technical Skills" skills={technicalSkills} />
             
-            <SkillCategory title="Compétences Techniques" skills={technicalSkills} />
+            <p>I believe in the power of technology to transform the world, and it is this belief that inspires me to create powerful applications, interactive websites, and innovative solutions. My work is the result of many hours spent solving problems, exploring new ideas, and pushing the boundaries of development.</p>
             
-            <p>Je crois en la puissance de la technologie pour transformer le monde, et c'est cette conviction qui m'inspire à créer des applications puissantes, des sites web interactifs et des solutions innovantes. Mon travail est le fruit de nombreuses heures passées à résoudre des problèmes, à explorer de nouvelles idées et à repousser les limites du développement.</p>
+            <SkillCategory title="Design Skills" skills={designSkills} />
             
-            <SkillCategory title="Compétences en Design" skills={designSkills} />
+            <p>Over the years, I have had the opportunity to collaborate with various clients and companies, gain experience in multiple domains, and participate in stimulating projects. But my thirst for knowledge is insatiable, and I remain in perpetual evolution to stay at the forefront of technology.</p>
             
-            <p>Au fil des ans, j'ai eu l'opportunité de collaborer avec divers clients et entreprises, d'acquérir de l'expérience dans de multiples domaines et de participer à des projets stimulants. Mais ma soif de connaissance est insatiable, et je reste en perpétuelle évolution pour rester à la pointe de la technologie.</p>
-            
-            <SkillCategory title="Compétences en Gestion de Projet" skills={projectManagementSkills} />
+            <SkillCategory title="Projetct Management Skills" skills={projectManagementSkills} />
             
             <p>Langues :</p>
             <ul>
@@ -98,12 +90,20 @@ export default function CallToActionWithIllustration() {
               ))}
             </ul>
             
-            <p><br/>Je vous invite à parcourir mon portfolio pour découvrir mon parcours, mes réalisations passées et mes projets en cours. Si vous souhaitez discuter de collaborations potentielles, de défis technologiques passionnants ou simplement échanger sur des idées, n'hésitez pas à me contacter.</p>
+            <p><br/>I invite you to explore my portfolio and my GitHub to discover my journey, past achievements, and ongoing projects. If you want to discuss potential collaborations, exciting technological challenges, or simply exchange ideas, please feel free to contact me.</p>
             
-            <p>Merci d'avoir pris le temps de visiter mon portfolio. Je suis enthousiaste à l'idée de partager mon voyage en constante évolution dans le monde du développement.</p>
           </Text>
-        <Stack spacing={6} direction={'row'}>
-        <Link href='/'>
+        <Stack spacing={6} direction={'row'} textAlign={'center'}>
+        <Link href="https://github.com/SediFaycal" color="blue.500" _hover={{ color: "red.500" }}>
+          <Heading
+            textAlign={'center'}
+            fontWeight={600}
+            fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+            lineHeight={'100%'}>
+            GitHub
+          </Heading>
+              </Link>
+        {/* <Link href='/'>
           <Button
             rounded={'full'}
             px={6}
@@ -112,7 +112,7 @@ export default function CallToActionWithIllustration() {
             _hover={{ bg: 'red.500' }}>
             <BsGithub/>
           </Button>
-        </Link>
+        </Link> */}
         </Stack>
       </Stack>
     </Container>
