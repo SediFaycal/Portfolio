@@ -17,6 +17,7 @@ import {
     InputLeftElement,
     Textarea,
   } from '@chakra-ui/react'
+  import { useState } from 'react';
   import {
     MdPhone,
     MdEmail,
@@ -27,6 +28,32 @@ import {
   import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs'
   
   export default function Contact() {
+    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [showPopup, setShowPopup] = useState(false);
+
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData({ ...formData, [name]: value });
+//   };
+
+//   const nodemailer = require('nodemailer');
+
+// const transporter = nodemailer.createTransport({
+//   service: 'Gmail',
+//   auth: {
+//     user: 'votre-email@gmail.com',
+//     pass: 'votre-mot-de-passe',
+//   },
+// });
+
+
+//   const handleSubmit = async () => {
+//     // Envoie un e-mail avec les données du formulaire ici
+
+//     // Affiche la fenêtre pop-up
+//     setShowPopup(true);
+//   };
+
     return (
       <Container maxW="full" mt={0} centerContent overflow="hidden">
         <Flex>

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import MonBody from '@/components/body'
-import NavIndex from '@/components/bar/navbarIndex'
+import Nav from '@/components/bar/navbar'
 import Contact from '@/components/body/contact'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-      <NavIndex/>
+      <Nav/>
       <Contact/>
       </main>
     </>
