@@ -24,18 +24,15 @@ import {
     <Stack spacing={6} w={'full'} maxW={'lg'}>
       <Heading fontSize={{ base: '4xl', md: '5xl', lg: '6xl' }}>
         <Text as="a" href={'projetsSite'}
-        _hover={{
-          textDecoration: 'underline',}}>
+        color="blue.500" _hover={{ color: "red.500"}}>
           WEB <br/><br/>
         </Text>
-        <Text as="a" href={'projetsPhotos'}
-        _hover={{
-          textDecoration: 'underline',}}>
+        <Text as="a" href={'projetCategorie'}
+       color="blue.500" _hover={{ color: "red.500"}}>
           PHOTOS<br/><br/>
         </Text>
-        <Text as="a" href={'/'}
-        _hover={{
-          textDecoration: 'underline',}}>
+        <Text as="a" href={'pageVideo'}
+        color="blue.500" _hover={{ color: "red.500"}}>
           VIDEOS<br/><br/>
         </Text>
       </Heading>

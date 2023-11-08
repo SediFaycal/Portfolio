@@ -15,16 +15,19 @@ import {
   export default function CategorieListe() {
       const images = [
           {
-            url: 'www.flexlike.fr',
+            url: 'espagne2023',
             src: '/merEnCarre.png',
+            title: "Espagne 2023"
           },
           {
-            url: 'www.youtube.fr',
+            url: 'blueSubaru',
             src: 'shoesRoue.png',
+            title: 'Blue Subaru'
           },
           {
-              url: 'lien_vers_image_3',
-              src: 'subaruHoucine.png',
+              url: '911Paris',
+              src: '911.png',
+              title: "GT1 in Paris !"
             },
 
         ];
@@ -38,18 +41,14 @@ import {
             spacing={{ base: 8, md: 14 }}
             py={{ base: 20, md: 10 }}>
             <Heading
+            fontFamily="Arial, sans-serif" 
               fontWeight={600}
               fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-              lineHeight={'110%'}>
+              lineHeight={'110%'}
+              color="blue.500" _hover={{ color: "red.500"}}>
               Mes Projets Photos
             </Heading>
-            <Heading
-              fontWeight={1000}
-              fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-              lineHeight={'110%'}>
-              Blue Subaru
-            </Heading>
-            <SimpleGrid columns={3} spacing={4} mt={10}>
+            <SimpleGrid columns={3} spacing={4} mt={10} mb={10}>
               {images.map((image, index) => (
                <a href={image.url} key={index}>
                   <Image
@@ -59,31 +58,12 @@ import {
                       _hover={{
                         transform: 'scale(1.1)', // Augmente la taille au survol
                         transition: 'transform 0.3s', // Ajoute une transition fluide
-                      }}
-                      
-        />
-      </a>
-    ))}
-  </SimpleGrid>
-  
-            <Stack
-              direction={'column'}
-              spacing={3}
-              align={'center'}
-              alignSelf={'center'}
-              position={'relative'}>
-              <Button
-                colorScheme={'green'}
-                bg={'green.400'}
-                rounded={'full'}
-                px={6}
-                _hover={{
-                  bg: 'green.500',
-                }}>
-                Get Started
-              </Button>
-            </Stack>
-          </Stack>
+                      }}/>
+                       <Text mt={5} fontSize="lg" fontWeight="bold">
+                    {image.title}
+                  </Text></a>))}
+            </SimpleGrid>
+        </Stack>
         </Container>
       </>
     )

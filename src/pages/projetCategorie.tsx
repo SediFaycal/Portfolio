@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Nav from '@/components/bar/navbar'
-import MonBody from '@/components/body'
 import CategorieListe from '@/components/body/projetCateg'
 
 const inter = Inter({ subsets: ['latin'] })

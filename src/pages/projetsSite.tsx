@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Nav from '@/components/bar/navbar'
 import MonBody from '@/components/body'
+import CallToActionWithIllustration from '@/components/body/pagesSite'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,7 @@ export default function Home() {
       </Head>
       <main>
       <Nav/>
-      <MonBody/>
+      <CallToActionWithIllustration/>
       </main>
     </>
   )

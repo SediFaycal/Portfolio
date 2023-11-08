@@ -18,6 +18,7 @@ import {
   Link,
 } from '@chakra-ui/react'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
+import { FiArrowLeft } from "react-icons/fi";
 // import logoDay from './images/FL_day.png'; // Remplacez par le chemin de l'image pour le mode jour
 // import logoNight from './images/FL_night.png'; // Remplacez par le chemin de l'image pour le mode nuit
 
@@ -59,20 +60,21 @@ export default function Nav() {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={8}>
         <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
-          {/* <Box>
+          <Box>
           <Link href="/">
-            <Image
+            <FiArrowLeft/>
+            {/* <Image
               src={imageSrc}
               alt="Logo"
               w={16}
               h={20}
               ml={5}
               mt={1}
-            />
+            /> */}
             </Link>
-            </Box> */}
+            </Box>
 
           <Flex alignItems={'center'} flex={1} justify={"center"}>
             <Stack direction={'row'} spacing={7}>
