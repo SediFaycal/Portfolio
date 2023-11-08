@@ -48,9 +48,10 @@ const NavLink = (props: Props) => {
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode()
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const bgColor = useColorModeValue('grey.400', 'black');
   // const [logo, setLogo] = useState(logoDay); // Initialisez le logo avec l'image du mode jour
 
-  const imageSrc = colorMode === 'light' ? '/FL_day.png' : '/FL_night.png';
+  // const imageSrc = colorMode === 'light' ? '/FL_day.png' : '/FL_night.png';
 
 
   const toggleTheme = () => {
@@ -60,7 +61,7 @@ export default function Nav() {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={8}>
+      <Box bg={bgColor} px={8}>
         <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
           <Box>
           <Link href="/">
