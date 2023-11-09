@@ -20,34 +20,34 @@ import {
             src: 'forraine.jpg',
           },
           {
-            url: 'https//.www.youtube.com',
+            url: 'https://www.youtube.com/watch?v=XcxOo0dW1x8',
             src: 'ferrari.jpg',
           },
           /////////////
           {
-              url: 'lien_vers_image_3',
+              url: 'https://www.youtube.com/watch?v=JOCCV9SOFn8',
               src: 'BmwDeLoin.jpg',
             },
             {
-              url: 'lien_vers_image_4',
+              url: '#',
               src: 'karting.jpg',
             },
             /////////////
             {
-              url: 'lien_vers_image_5',
+              url: '#',
               src: 'vueBatimentMer.jpg',
             },
             {
-              url: 'lien_vers_image_6',
+              url: '#',
               src: 'vueMer.jpg',
             },
             /////////////
             {
-              url: 'lien_vers_image_6',
+              url: 'https://www.youtube.com/watch?v=QmA3CLXt-CA',
               src: 'flMiniCooper.jpg',
             },
             {
-              url: 'lien_vers_image_6',
+              url: 'https://www.youtube.com/shorts/bdCE4vFLTjk',
               src: 'merco.jpg',
             },
           // Ajoutez autant d'objets que nécessaire
@@ -55,7 +55,7 @@ import {
   
     return (
       <>
-        <Container maxW={'5xl'}>
+        <Container maxW={'xl'}>
           <Stack
             as={Box}
             textAlign={'center'}
@@ -69,7 +69,7 @@ import {
               color={'grey.300'} _hover={{color: "red.300"}}>
               Espagne 2023
             </Heading>
-            <SimpleGrid columns={2} spacing={3} mt={10}>
+            <SimpleGrid columns={1} spacing={10} mt={10}>
               {images.map((image, index) => (
                <a href={image.url} key={index}>
                   <Image
@@ -81,7 +81,7 @@ import {
     ))}
   </SimpleGrid>
   
-            <Stack
+            {/* <Stack
               direction={'column'}
               spacing={3}
               align={'center'}
@@ -97,7 +97,7 @@ import {
                 }}>
                 Me contacter
               </Button>
-            </Stack>
+            </Stack> */}
           </Stack>
         </Container>
       </>

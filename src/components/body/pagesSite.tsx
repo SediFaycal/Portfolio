@@ -61,6 +61,7 @@ export default function CallToActionWithIllustration() {
   const languages = [
     "English (Fluent)",
     "French (Native Language)",
+    "Spanish(School Level)",
   ];
   
   return (
@@ -71,7 +72,7 @@ export default function CallToActionWithIllustration() {
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}>
         <Text style={{ textAlign: 'left' }}>
-          <p><strong>I am SELLAH Fayçal,</strong> a Full Stack developer constantly seeking improvement and innovation. My portfolio is a window into my journey in the world of development and art through the realms of photography or video, a journey marked by growth, learning, and the pursuit of excellence.</p>
+          <p><strong>I am SELLAH Fayçal,</strong> im 21, a Full Stack developer constantly seeking improvement and innovation. My portfolio is a window into my journey in the world of development and art through the realms of photography or video, a journey marked by growth, learning, and the pursuit of excellence.</p>
 
             <SkillCategory title="Technical Skills" skills={technicalSkills} />
             

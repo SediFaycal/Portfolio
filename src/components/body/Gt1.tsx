@@ -16,38 +16,38 @@ import {
   export default function PorschePhotos() {
       const images = [
           {
-            url: 'www.flexlike.fr',
+            url: 'https://youtu.be/QlopQF8CP3M?si=lSJIZqjIyHyEjXGe',
             src: '911_1.jpg',
           },
           {
-            url: 'https//.www.youtube.com',
+            url: 'https://youtu.be/QlopQF8CP3M?si=lSJIZqjIyHyEjXGe',
             src: '911_arriere.jpg',
           },
           /////////////
           {
-              url: 'lien_vers_image_3',
+              url: 'https://youtu.be/QlopQF8CP3M?si=lSJIZqjIyHyEjXGe',
               src: 'roueArriere.jpg',
             },
             {
-              url: 'lien_vers_image_4',
+              url: 'https://youtu.be/QlopQF8CP3M?si=lSJIZqjIyHyEjXGe',
               src: '911_side.jpg',
             },
             /////////////
             {
-              url: 'lien_vers_image_6',
+              url: 'https://youtu.be/QlopQF8CP3M?si=lSJIZqjIyHyEjXGe',
               src: '911Loin.jpg',
             },
             {
-              url: 'lien_vers_image_5',
+              url: 'https://youtu.be/QlopQF8CP3M?si=lSJIZqjIyHyEjXGe',
               src: 'roueAvant.jpg',
             },
             /////////////
             {
-              url: 'lien_vers_image_6',
+              url: 'https://youtu.be/QlopQF8CP3M?si=lSJIZqjIyHyEjXGe',
               src: 'planEnsemble911.jpg',
             },
             {
-              url: 'lien_vers_image_6',
+              url: 'https://youtu.be/QlopQF8CP3M?si=lSJIZqjIyHyEjXGe',
               src: '911Derriere.jpg',
             },
           // Ajoutez autant d'objets que nécessaire
@@ -55,7 +55,7 @@ import {
   
     return (
       <>
-        <Container maxW={'5xl'}>
+        <Container maxW={'xl'}>
           <Stack
             as={Box}
             textAlign={'center'}
@@ -69,7 +69,7 @@ import {
               color={'grey.300'} _hover={{color: "yellow.300"}}>
               GT1 in Paris !
             </Heading>
-            <SimpleGrid columns={2} spacing={3} mt={10}>
+            <SimpleGrid columns={2} spacing={10} mt={10}>
               {images.map((image, index) => (
                <a href={image.url} key={index}>
                   <Image
@@ -81,7 +81,7 @@ import {
     ))}
   </SimpleGrid>
   
-            <Stack
+            {/* <Stack
               direction={'column'}
               spacing={3}
               align={'center'}
@@ -97,7 +97,7 @@ import {
                 }}>
                 Me contacter
               </Button>
-            </Stack>
+            </Stack> */}
           </Stack>
         </Container>
       </>

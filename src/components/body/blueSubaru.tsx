@@ -16,38 +16,38 @@ import { color } from 'framer-motion';
 export default function Liste() {
     const images = [
         {
-          url: 'www.flexlike.fr',
+          url: '#',
           src: '/HoucineVoiture.png',
         },
         {
-          url: 'www.youtube.fr',
+          url: '#',
           src: 'shoesRoue.png',
         },
         /////////////
         {
-            url: 'lien_vers_image_3',
+            url: '#',
             src: 'subaruHoucine.png',
           },
           {
-            url: 'lien_vers_image_4',
+            url: '#',
             src: 'subHoucineshoes.png',
           },
           /////////////
           {
-            url: 'lien_vers_image_5',
+            url: '#',
             src: 'houcinedebout.png',
           },
           {
-            url: 'lien_vers_image_6',
+            url: 'https://www.youtube.com/watch?v=D9tTJVT31U8',
             src: 'subaru1.jpg',
           },
           /////////////
           {
-            url: 'lien_vers_image_6',
+            url: '#',
             src: 'conducteur1.png',
           },
           {
-            url: 'lien_vers_image_6',
+            url: '#',
             src: 'conducteur2.png',
           },
         // Ajoutez autant d'objets que nécessaire
@@ -55,7 +55,7 @@ export default function Liste() {
 
   return (
     <>
-      <Container maxW={'5xl'}>
+      <Container maxW={'4xl'}>
         <Stack
           as={Box}
           textAlign={'center'}
@@ -69,7 +69,7 @@ export default function Liste() {
             color={'grey.300'} _hover={{color: "#002E98"}}>
             Blue Subaru
           </Heading>
-          <SimpleGrid columns={2} spacing={4} mt={10}>
+          <SimpleGrid columns={2} spacing={20} mt={10}>
             {images.map((image, index) => (
              <a href={image.url} key={index}>
                 <Image
@@ -81,7 +81,7 @@ export default function Liste() {
   ))}
 </SimpleGrid>
 
-          <Stack
+          {/* <Stack
             direction={'column'}
             spacing={3}
             align={'center'}
@@ -97,7 +97,7 @@ export default function Liste() {
               }}>
               Me contacter
             </Button>
-          </Stack>
+          </Stack> */}
         </Stack>
       </Container>
     </>

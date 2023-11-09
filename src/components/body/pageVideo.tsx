@@ -11,15 +11,23 @@ import {
 export default function Liste() {
   const videos = [
     {
-      url: 'videoSubaru.mov',
+      url: '/video/finalpote.mov',
       title: 'Vidéo 1',
     },
     {
-      url: 'videoDeauville.mov',
+      url: '/video/video_FL_CAP.mov',
+      title: 'Vidéo 1',
+    },
+    {
+      url: '/video/videoSubaru.mov',
+      title: 'Vidéo 1',
+    },
+    {
+      url: '/video/videoDeauville.mov',
       title: 'Vidéo 2',
     },
     {
-      url: 'videoSpain.mov',
+      url: '/video/souleys_clip.mov',
       title: 'Vidéo 2',
     },
     // Ajoutez plus d'objets vidéo au besoin
@@ -37,7 +45,7 @@ export default function Liste() {
           fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
           lineHeight={'110%'}
           textDecoration={'underline'}>
-          Mes Projets Vidéos
+          Videos Project
         </Heading>
         <Stack spacing={4} mt={10}>
           {videos.map((video, index) => (
@@ -52,7 +60,7 @@ export default function Liste() {
           ))}
         </Stack>
 
-        <Stack
+        {/* <Stack
           direction={'column'}
           spacing={3}
           align={'center'}
@@ -68,7 +76,7 @@ export default function Liste() {
             }}>
             Me contacter
           </Button>
-        </Stack>
+        </Stack> */}
       </Stack>
     </Container>
   );
