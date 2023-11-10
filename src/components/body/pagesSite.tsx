@@ -72,27 +72,34 @@ export default function CallToActionWithIllustration() {
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}>
         <Text style={{ textAlign: 'left' }}>
-          <p><strong>I am SELLAH Fayçal,</strong> im 21, a Full Stack developer constantly seeking improvement and innovation. My portfolio is a window into my journey in the world of development and art through the realms of photography or video, a journey marked by growth, learning, and the pursuit of excellence.</p>
+        <Text><strong>I am SELLAH Fayçal,</strong> im 21, a Full Stack developer constantly seeking improvement and innovation. My portfolio is a window into my journey in the world of development and art through the realms of photography or video, a journey marked by growth, learning, and the pursuit of excellence.</Text>
 
             <SkillCategory title="Technical Skills" skills={technicalSkills} />
             
-            <p>I believe in the power of technology to transform the world, and it is this belief that inspires me to create powerful applications, interactive websites, and innovative solutions. My work is the result of many hours spent solving problems, exploring new ideas, and pushing the boundaries of development.</p>
+            <Text>I believe in the power of technology to transform the world, and it is this belief that inspires me to create powerful applications, interactive websites, and innovative solutions. My work is the result of many hours spent solving problems, exploring new ideas, and pushing the boundaries of development.</Text>
             
             <SkillCategory title="Design Skills" skills={designSkills} />
             
-            <p>Over the years, I have had the opportunity to collaborate with various clients and companies, gain experience in multiple domains, and participate in stimulating projects. But my thirst for knowledge is insatiable, and I remain in perpetual evolution to stay at the forefront of technology.</p>
+            <Text>Over the years, I have had the opportunity to collaborate with various clients and companies, gain experience in multiple domains, and participate in stimulating projects. But my thirst for knowledge is insatiable, and I remain in perpetual evolution to stay at the forefront of technology.</Text>
             
             <SkillCategory title="Projetct Management Skills" skills={projectManagementSkills} />
             
-            <p>Langues :</p>
-            <ul>
+            <Text>Langues :</Text>
+            <view>
               {languages.map((language, index) => (
-                <li key={index}>{language}</li>
+                <Text key={index}>{language}</Text>
               ))}
-            </ul>
+            </view>
             
-            <p><br/>I invite you to explore my portfolio and my GitHub to discover my journey, past achievements, and ongoing projects. If you want to discuss potential collaborations, exciting technological challenges, or simply exchange ideas, please feel free to contact me.</p>
-            
+            <Text><br/>I invite you to explore my portfolio and my GitHub to discover my journey, past achievements, and ongoing projects. If you want to discuss potential collaborations, exciting technological challenges, or simply exchange ideas, please feel free to contact me.</Text>
+                
+            <Text>
+              <br/>My Phone Number : 06.51.90.66.62
+              <br/>My Mail Adress : faycalsellah@yahoo.com
+              
+            </Text>
+
+
           </Text>
         <Stack spacing={6} direction={'row'} textAlign={'center'}>
         <Link href="https://github.com/SediFaycal" color="blue.500" _hover={{ color: "red.500" }}>
